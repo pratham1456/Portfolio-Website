@@ -103,3 +103,49 @@ a {
   color: #4e45d5;
   font-weight: 800;
 }
+
+.hero-section-sub-heading {
+  font-size: 45px;
+  line-height: 45px;
+}
+
+.hero-section-description {
+  margin-top: 1rem;
+  width: 70%;
+  font-weight: 500;
+}
+
+.hero-section-right {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.user-image {
+  padding: 2.5rem;
+  filter: grayscale(1);
+  transition: all 1s;
+  animation: scaleImage 5s linear infinite;
+}
+
+.user-image img {
+  z-index: -1;
+}
+
+@keyframes scaleImage {
+  0% {
+    filter: grayscale(0);
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+    filter: grayscale(1);
+    box-shadow: 3px 3px 10px black;
+  }
+  100% {
+    transform: scale(1);
+    filter: grayscale(0);
+  }
+}
